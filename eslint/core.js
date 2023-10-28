@@ -1,5 +1,4 @@
 module.exports = {
-  root: true,
   extends: ['plugin:promise/recommended'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'jest', 'promise'],
@@ -7,13 +6,12 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       rules: {
+        '@typescript-eslint/no-unused-vars': 'warn',
         'require-await': 'error',
-        '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'warn',
         'no-undef': 'warn',
         'no-console': 'off',
-        'jest/no-disabled-tests': 'off',
-        '@typescript-eslint/no-unused-vars': 'warn',
+        'jest/no-disabled-tests': 'off'
       },
     },
   ],
