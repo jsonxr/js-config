@@ -1,5 +1,37 @@
 # @jsonxr/config
 
-Attempt to share configuration between projects.
+Share configuration between projects.
 
-eslint not so flexible however.
+Installs
+- typescript
+- eslint, prettier and plugins
+- jest
+
+
+# Configuration
+
+- Install @jsonxr/config
+
+  ```sh
+  yarn add --dev @jsonxr/config
+  ```
+
+- `.eslintrc.cjs`
+
+  ```js
+  module.exports = {
+    ...require('@jsonxr/config/eslint.cjs'),
+  };
+  ```
+
+  [eslint settings](eslint.cjs)
+
+- `.prettierrc.cjs`
+
+  ```js
+  module.exports = {
+    ...require('@jsonxr/config/prettier.cjs'),
+  };
+  ```
+
+  [prettier settings](prettier.cjs)
