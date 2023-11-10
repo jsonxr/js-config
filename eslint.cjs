@@ -16,11 +16,15 @@ module.exports = {
         'no-shadow': 'off', // doesn't allow reuse of simple variable names
         'no-undef': 'warn',
         'no-console': 'warn',
-        'jest/no-disabled-tests': 'off', // give me a break, let me disable
+        // Jest
+        'jest/no-commented-out-tests': 'off',
+        'jest/no-disabled-tests': 'off',
       },
     },
   ],
   env: {
     jest: true,
+    node: true,
+    browser: true,
   },
 };
