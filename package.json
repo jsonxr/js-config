@@ -1,8 +1,12 @@
 {
   "name": "@jsonxr/config",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.js",
   "license": "MIT",
+  "files": [
+    "./prettier.cjs",
+    "./eslint.cjs"
+  ],
   "dependencies": {
     "@types/jest": "^29.5.6",
     "@types/node": "^20.8.9",
